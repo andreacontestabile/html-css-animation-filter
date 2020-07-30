@@ -205,3 +205,112 @@
     transform: rotate(0);
   }
 }
+
+/* Esercizio 12 */
+
+.ex-12-top-white {
+  animation-name: back-and-forward;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.ex-12-bottom-white {
+  animation-name: back-and-forward-2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes back-and-forward {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 60%;
+  }
+}
+
+@keyframes back-and-forward-2 {
+  0% {
+    right: 20%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+
+/* Esercizio 13 */
+
+.ex-13-top-white {
+  left: -30px;
+  animation-name: all-around;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.ex-13-bottom-white {
+  left: calc(100% - 30px);
+  animation-name: all-around-2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes all-around {
+  0% {
+    left: -20px;
+    top: -10px;
+  }
+
+  40% {
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+
+  50% {
+    left: calc(100% - 30px);
+    top: calc(100% - 10px);
+  }
+
+  90% {
+    left: -20px;
+    top: calc(100% - 10px);
+  }
+
+  100% {
+    left: -20px;
+    top: -10px;
+  }
+}
+
+@keyframes all-around-2 {
+  0% {
+    left: calc(100% - 30px);
+    top: calc(100% - 10px);
+  }
+
+  40% {
+    left: -20px;
+    top: calc(100% - 10px);
+  }
+
+  50% {
+    left: -20px;
+    top: -10px;
+  }
+
+  90% {
+    left: calc(100% - 30px);
+    top: -10px
+  }
+
+  100% {
+    left: calc(100% - 30px);
+    top: calc(100% - 10px);
+  }
+}
+}
